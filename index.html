@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Xu - Computer Science Portfolio</title>
+    <meta name="description" content="A high school computer science student's portfolio showcasing projects and skills.">
+    <style>
+        /* All CSS from style.css */
+        :root {
+            --primary-green: #10b981;
+            --dark-green: #059669;
+            --light-green: #d1fae5;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-700: #374151;
+            --gray-900: #111827;
+        
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            font-weight: 400;
+            font-size: 16px;
+        
+            color: var(--gray-900);
+            background-color: var(--white);
+        
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            background-color: var(--white);
+            color: var(--gray-900);
+        }
+        
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+        
+        a {
+            color: var(--primary-green);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--dark-green);
+        }
+        
+        button, input[type="submit"] {
+            background-color: var(--primary-green);
+            color: var(--white);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover, input[type="submit"]:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+        
+        button:active, input[type="submit"]:active {
+            transform: translateY(0);
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-green);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.6;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            color: var(--gray-900);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--gray-700);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary-green);
+            color: var(--white);
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--dark-green);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(16, 185, 129, 0.4);
+        }
+        
+        .card {
+            background-color: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-green);
+        }
+        
+        .section {
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-green);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .project-card {
+            background-color: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-green);
+        }
+        
+        .project-card-header {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .project-card-header h3 {
+            margin: 0;
+            color: var(--white);
+        }
+        
+        .project-card-body {
+            padding: 2rem;
+        }
+        
+        .project-card-body p {
+            color: var(--gray-700);
+            margin-bottom: 1rem;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .skill-item {
+            background-color: var(--light-green);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--primary-green);
+        }
+        
+        .skill-item h4 {
+            color: var(--dark-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-item p {
+            color: var(--gray-700);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 0.5rem;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        footer {
+            background-color: var(--gray-900);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        footer p {
+            margin: 0;
+            color: var(--gray-200);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+        
+            h2 {
+                font-size: 1.875rem;
+            }
+        
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.95rem;
+            }
+        
+            .container {
+                padding: 1.5rem;
+            }
+        
+            .hero {
+                min-height: auto;
+                padding: 3rem 1.5rem;
+            }
+        
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animation styles */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        // All JavaScript from main.js
+        const currentPage = getCurrentPage();
+
+        function getCurrentPage() {
+            const path = window.location.pathname;
+            if (path.includes('about')) return 'about';
+            if (path.includes('projects')) return 'projects';
+            if (path.includes('resume')) return 'resume';
+            if (path.includes('contact')) return 'contact';
+            return 'home';
+        }
+
+        function loadPage(page) {
+            const app = document.querySelector('#app');
+
+            switch(page) {
+                case 'about':
+                    app.innerHTML = getAboutPage();
+                    break;
+                case 'projects':
+                    app.innerHTML = getProjectsPage();
+                    break;
+                case 'resume':
+                    app.innerHTML = getResumePage();
+                    break;
+                case 'contact':
+                    app.innerHTML = getContactPage();
+                    break;
+                default:
+                    app.innerHTML = getHomePage();
+            }
+
+            setupNavigation();
+            setupAnimations();
+        }
+
+        function getHeader() {
+            return `
+                <header>
+                    <nav>
+                        <div class="logo">Portfolio</div>
+                        <ul class="nav-links">
+                            <li><a href="/" onclick="navigateTo(event, 'home')">Home</a></li>
+                            <li><a href="/about" onclick="navigateTo(event, 'about')">About Me</a></li>
+                            <li><a href="/projects" onclick="navigateTo(event, 'projects')">Projects</a></li>
+                            <li><a href="/resume" onclick="navigateTo(event, 'resume')">Resume</a></li>
+                            <li><a href="/contact" onclick="navigateTo(event, 'contact')">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            `;
+        }
+
+        function getFooter() {
+            const year = new Date().getFullYear();
+            return `
+                <footer>
+                    <p>&copy; ${year} Alexander Xu. All rights reserved.</p>
+                </footer>
+            `;
+        }
+
+        function getHomePage() {
+            return `
+                ${getHeader()}
+                <main>
+                    <section class="hero">
+                        <svg class="hero-background" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="polyGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#d1fae5;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#a7f3d0;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <polygon points="0,0 400,0 200,300" fill="url(#polyGradient1)" opacity="0.4" class="poly poly1" />
+                            <polygon points="600,50 900,100 750,300" fill="#6aeba9" opacity="0.3" class="poly poly2" />
+                            <polygon points="100,400 300,350 250,500" fill="#81cca5" opacity="0.35" class="poly poly3" />
+                            <polygon points="800,300 1100,250 950,500" fill="#32d180" opacity="0.2" class="poly poly4" />
+                            <polygon points="300,550 600,500 450,600" fill="#66d99e" opacity="0.4" class="poly poly5" />
+                        </svg>
+                        <div class="hero-content">
+                            <h1>Hi! I'm Alexander Xu</h1>
+                            <p>Building projects, learning algorithms, and exploring the world of technology</p>
+                            <a href="/projects" class="cta-button" onclick="navigateTo(event, 'projects')">View My Projects</a>
+                        </div>
+                    </section>
+                </main>
+                ${getFooter()}
+            `;
+        }
+
+        function getAboutPage() {
+            return `
+                ${getHeader()}
+                <main class="container">
+                    <section class="section">
+                        <h2 class="section-title">About Me</h2>
+                        <div style="max-width: 800px; margin: 0 auto;">
+                            <p>
+                                I'm a high school computer science student passionate about building applications and solving problems with code.
+                                In my computer science classes, I've been learning fundamental concepts including programming, data structures, algorithms, and web development.
+                            </p>
+                            <p>
+                                My journey in computer science started with curiosity about how software works. Since then, I've developed a strong foundation in:
+                            </p>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <h4>Programming</h4>
+                                    <p>Variables, loops, conditionals, and functions</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4>Data Structures</h4>
+                                    <p>Arrays, lists, and basic algorithmic thinking</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4>Web Development</h4>
+                                    <p>HTML, CSS, and vanilla JavaScript</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4>Problem Solving</h4>
+                                    <p>Breaking down complex problems into manageable steps</p>
+                                </div>
+                            </div>
+                            <p>
+                                I'm excited about the possibilities in technology and looking forward to deepening my knowledge in college and beyond.
+                            </p>
+                        </div>
+                    </section>
+                </main>
+                ${getFooter()}
+            `;
+        }
+
+        function getProjectsPage() {
+            return `
+                ${getHeader()}
+                <main class="container">
+                    <section class="section">
+                        <h2 class="section-title">My Projects</h2>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <h3>Survival Game</h3>
+                                </div>
+                                <div class="project-card-body">
+                                    <p>A survival game built with MIT App Inventor. Players dodge obstacles, teleport, and gain shields.</p>
+                                    <p><strong>Skills:</strong> Control flow, functions, data structures</p>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <h3>Pizza Calculator App</h3>
+                                </div>
+                                <div class="project-card-body">
+                                    <p>A fully functional pizza calculator with a clean UI. Calculates everything related to planning pizza parties.</p>
+                                    <p><strong>Skills:</strong> Mathematical Operations, event listeners, functions</p>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <h3>Guessing Game</h3>
+                                </div>
+                                <div class="project-card-body">
+                                    <p>Guessing game between two people that implements binary search to effeciently guess.</p>
+                                    <p><strong>Skills:</strong> Algorithms, animation, visualization</p>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <h3>Stock Simulator</h3>
+                                </div>
+                                <div class="project-card-body">
+                                    <p>An app that allows students to practice investing with real stock market data.</p>
+                                    <p><strong>Skills:</strong> APIs, functions, data manipulation</p>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-card-header">
+                                    <h3>This Portfolio Website</h3>
+                                </div>
+                                <div class="project-card-body">
+                                    <p>A responsive portfolio built with vanilla HTML, CSS, and JavaScript. Features low poly animations and professional design.</p>
+                                    <p><strong>Skills:</strong> Web design, responsive layout, vanilla JS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                ${getFooter()}
+            `;
+        }
+
+        function getResumePage() {
+            return `
+                ${getHeader()}
+                <main class="container">
+                    <section class="section">
+                        <h2 class="section-title">Resume</h2>
+                        <div style="max-width: 800px; margin: 0 auto;">
+                            <h3>Education</h3>
+                            <div class="card" style="margin-bottom: 2rem;">
+                                <h4 style="margin-bottom: 0.5rem;">Emerald High School</h4>
+                                <p style="margin: 0; color: var(--gray-700); font-style: italic;">Computer Science Essentials Course | 2025 - 2026</p>
+                                <p style="margin: 1rem 0 0 0;">Focus on fundamental CS concepts including programming, algorithms, and web development.</p>
+                            </div>
+
+                            <h3>Technical Skills</h3>
+                            <div class="skills-list" style="margin-bottom: 2rem;">
+                                <div class="skill-item">
+                                    <h4>Languages</h4>
+                                    <p>Python, Java, HTML, C++</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4>Concepts</h4>
+                                    <p>Data structures, algorithms, object-oriented programming, web development</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4>Tools</h4>
+                                    <p>Git, GitHub, VS Code, browser dev tools</p>
+                                </div>
+                                <div class="skill-item">
+                                    <h4>Problem Solving</h4>
+                                    <p>Debugging, algorithm design, code optimization</p>
+                                </div>
+                            </div>
+
+                            <h3>Relevant Coursework</h3>
+                            <ul style="margin-bottom: 2rem; margin-left: 1.5rem;">
+                                <li style="margin-bottom: 0.5rem;">Computer Science Essentials</li>
+                                <li style="margin-bottom: 0.5rem;">Introduction to Programming</li>
+                                <li style="margin-bottom: 0.5rem;">Data Structures and Algorithms</li>
+                                <li style="margin-bottom: 0.5rem;">Web Development Fundamentals</li>
+                            </ul>
+
+                            <h3>Interests</h3>
+                            <p>I'm interested in exploring software development, web technologies, and how computer science applies to real-world problem solving.</p>
+                        </div>
+                    </section>
+                </main>
+                ${getFooter()}
+            `;
+        }
+
+        function getContactPage() {
+            return `
+                ${getHeader()}
+                <main class="container">
+                    <section class="section">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div style="max-width: 600px; margin: 0 auto; margin-bottom: 2rem;">
+                            <p style="text-align: center; color: var(--gray-700);">
+                                Have questions or want to chat about computer science? Send me an email at: 
+                                <strong>your-email@example.com</strong>
+                            </p>
+                        </div>
+                    </section>
+                </main>
+                ${getFooter()}
+            `;
+        }
+
+        function navigateTo(event, page) {
+            event.preventDefault();
+            window.history.pushState({page}, '', `/${page === 'home' ? '' : page}`);
+            loadPage(page);
+        }
+
+        function setupNavigation() {
+            window.navigateTo = navigateTo;
+        }
+
+        function setupAnimations() {
+            const polys = document.querySelectorAll('.poly');
+
+            polys.forEach((poly, index) => {
+                const style = document.createElement('style');
+                const duration = 3 + index * 0.5;
+                const delay = index * 0.2;
+
+                style.textContent = `
+                    @keyframes float${index} {
+                        0%, 100% { transform: translateY(0px); }
+                        50% { transform: translateY(-${15 + index * 5}px); }
+                    }
+                    .poly${index + 1} {
+                        animation: float${index} ${duration}s ease-in-out ${delay}s infinite;
+                    }
+                `;
+
+                document.head.appendChild(style);
+            });
+
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.style.animation = `slideInUp 0.6s ease forwards`;
+            });
+        }
+
+        // Make navigateTo available globally
+        window.navigateTo = navigateTo;
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', (e) => {
+            const page = e.state?.page || 'home';
+            loadPage(page);
+        });
+
+        // Initial page load
+        loadPage(currentPage);
+    </script>
+</body>
+</html>
