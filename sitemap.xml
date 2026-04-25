@@ -10,6 +10,198 @@
 <url>
   <loc>https://orange-neon.github.io/</loc>
   <lastmod>2026-04-25T14:38:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-4-en-el-consultorio/interpretive-1.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-1.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-2.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-3.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-4.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-5.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-6.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-7.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-8.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-9.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-10.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-11.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-12.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-13.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/la-tecnologia-14.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-1/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-2/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-3/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-4/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-5/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-6/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-7/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/interpretive-8/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-1/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-2/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-3/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-4/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-5/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-6/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-7/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/tests/la-vivienda-8/</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/mandatos-1.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/mandatos-2.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/mandatos-3.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/por-vs-para-1.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://orange-neon.github.io/orange-atlas/spanish2/unidad-5-la-tecnologia/por-vs-para-2.html</loc>
+  <lastmod>2026-04-25T14:22:01+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
